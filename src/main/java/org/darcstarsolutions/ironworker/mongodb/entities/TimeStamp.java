@@ -18,6 +18,8 @@ public class TimeStamp {
 
     private long time;
 
+    private boolean read;
+
     private UUID uuid;
 
     public BigInteger getId() {
@@ -42,5 +44,13 @@ public class TimeStamp {
 
     public void setUuid(UUID uuid) {
         this.uuid = uuid;
+    }
+
+    public boolean isRead() {
+        return read;
+    }
+
+    public void setRead(boolean read) {
+        this.read = read;
     }
 }

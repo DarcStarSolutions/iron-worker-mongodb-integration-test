@@ -28,6 +28,7 @@ public class Application implements CommandLineRunner {
         TimeStamp timeStamp = new TimeStamp();
         timeStamp.setTime(System.currentTimeMillis());
         timeStamp.setUuid(UUID.randomUUID());
+        timeStamp.setRead(false);
         repository.save(timeStamp);
     }
 }
